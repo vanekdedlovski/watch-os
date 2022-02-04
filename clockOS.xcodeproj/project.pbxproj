@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46439ACD27ACF27A009B07EF /* clockOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46439ACC27ACF27A009B07EF /* clockOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46439AD227ACF27B009B07EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46439AD127ACF27B009B07EF /* Assets.xcassets */; };
+		46439AD827ACF27B009B07EF /* clockOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46439AD727ACF27B009B07EF /* clockOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46439ADD27ACF27B009B07EF /* clockOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439ADC27ACF27B009B07EF /* clockOSApp.swift */; };
+		46439ADF27ACF27B009B07EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439ADE27ACF27B009B07EF /* ContentView.swift */; };
+		46439AE127ACF27B009B07EF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439AE027ACF27B009B07EF /* NotificationController.swift */; };
+		46439AE327ACF27B009B07EF /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439AE227ACF27B009B07EF /* NotificationView.swift */; };
+		46439AE527ACF27B009B07EF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439AE427ACF27B009B07EF /* ComplicationController.swift */; };
+		46439AE727ACF27C009B07EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46439AE627ACF27C009B07EF /* Assets.xcassets */; };
+		46439AEA27ACF27C009B07EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46439AE927ACF27C009B07EF /* Preview Assets.xcassets */; };
+		46439AFC27ACF2F7009B07EF /* MainModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439AFB27ACF2F7009B07EF /* MainModule.swift */; };
+		46439AFF27ACF370009B07EF /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439AFE27ACF370009B07EF /* SplashScreen.swift */; };
+		46439B0127ACF3A1009B07EF /* SignInScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439B0027ACF3A1009B07EF /* SignInScreen.swift */; };
+		46439B0327ACF3AE009B07EF /* OrderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439B0227ACF3AE009B07EF /* OrderScreen.swift */; };
+		46439B0527ACF410009B07EF /* MapScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46439B0427ACF410009B07EF /* MapScreen.swift */; };
+		46439B0827ACF50A009B07EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 46439B0727ACF50A009B07EF /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46439ACE27ACF27A009B07EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46439AC227ACF279009B07EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46439ACB27ACF27A009B07EF;
+			remoteInfo = "clockOS WatchKit App";
+		};
+		46439AD927ACF27B009B07EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46439AC227ACF279009B07EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46439AD627ACF27B009B07EF;
+			remoteInfo = "clockOS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46439AF227ACF27C009B07EF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46439AD827ACF27B009B07EF /* clockOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46439AF627ACF27C009B07EF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				46439ACD27ACF27A009B07EF /* clockOS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		46439AC827ACF279009B07EF /* clockOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = clockOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46439ACC27ACF27A009B07EF /* clockOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "clockOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46439AD127ACF27B009B07EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46439AD727ACF27B009B07EF /* clockOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "clockOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46439ADC27ACF27B009B07EF /* clockOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockOSApp.swift; sourceTree = "<group>"; };
+		46439ADE27ACF27B009B07EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46439AE027ACF27B009B07EF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		46439AE227ACF27B009B07EF /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		46439AE427ACF27B009B07EF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		46439AE627ACF27C009B07EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46439AE927ACF27C009B07EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46439AEB27ACF27C009B07EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46439AEC27ACF27C009B07EF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		46439AFB27ACF2F7009B07EF /* MainModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModule.swift; sourceTree = "<group>"; };
+		46439AFE27ACF370009B07EF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		46439B0027ACF3A1009B07EF /* SignInScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreen.swift; sourceTree = "<group>"; };
+		46439B0227ACF3AE009B07EF /* OrderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreen.swift; sourceTree = "<group>"; };
+		46439B0427ACF410009B07EF /* MapScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46439AD427ACF27B009B07EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46439B0827ACF50A009B07EF /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46439AC127ACF279009B07EF = {
+			isa = PBXGroup;
+			children = (
+				46439AD027ACF27A009B07EF /* clockOS WatchKit App */,
+				46439ADB27ACF27B009B07EF /* clockOS WatchKit Extension */,
+				46439AC927ACF279009B07EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46439AC927ACF279009B07EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46439AC827ACF279009B07EF /* clockOS.app */,
+				46439ACC27ACF27A009B07EF /* clockOS WatchKit App.app */,
+				46439AD727ACF27B009B07EF /* clockOS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46439AD027ACF27A009B07EF /* clockOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				46439AD127ACF27B009B07EF /* Assets.xcassets */,
+			);
+			path = "clockOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		46439ADB27ACF27B009B07EF /* clockOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				46439AFD27ACF354009B07EF /* View */,
+				46439AFA27ACF2D3009B07EF /* common */,
+				46439ADC27ACF27B009B07EF /* clockOSApp.swift */,
+				46439ADE27ACF27B009B07EF /* ContentView.swift */,
+				46439AE027ACF27B009B07EF /* NotificationController.swift */,
+				46439AE227ACF27B009B07EF /* NotificationView.swift */,
+				46439AE427ACF27B009B07EF /* ComplicationController.swift */,
+				46439AE627ACF27C009B07EF /* Assets.xcassets */,
+				46439AEB27ACF27C009B07EF /* Info.plist */,
+				46439AEC27ACF27C009B07EF /* PushNotificationPayload.apns */,
+				46439AE827ACF27C009B07EF /* Preview Content */,
+			);
+			path = "clockOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		46439AE827ACF27C009B07EF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				46439AE927ACF27C009B07EF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		46439AFA27ACF2D3009B07EF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				46439AFB27ACF2F7009B07EF /* MainModule.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		46439AFD27ACF354009B07EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46439AFE27ACF370009B07EF /* SplashScreen.swift */,
+				46439B0027ACF3A1009B07EF /* SignInScreen.swift */,
+				46439B0227ACF3AE009B07EF /* OrderScreen.swift */,
+				46439B0427ACF410009B07EF /* MapScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46439AC727ACF279009B07EF /* clockOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46439AF727ACF27C009B07EF /* Build configuration list for PBXNativeTarget "clockOS" */;
+			buildPhases = (
+				46439AC627ACF279009B07EF /* Resources */,
+				46439AF627ACF27C009B07EF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46439ACF27ACF27A009B07EF /* PBXTargetDependency */,
+			);
+			name = clockOS;
+			productName = clockOS;
+			productReference = 46439AC827ACF279009B07EF /* clockOS.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		46439ACB27ACF27A009B07EF /* clockOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46439AF327ACF27C009B07EF /* Build configuration list for PBXNativeTarget "clockOS WatchKit App" */;
+			buildPhases = (
+				46439ACA27ACF27A009B07EF /* Resources */,
+				46439AF227ACF27C009B07EF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46439ADA27ACF27B009B07EF /* PBXTargetDependency */,
+			);
+			name = "clockOS WatchKit App";
+			productName = "clockOS WatchKit App";
+			productReference = 46439ACC27ACF27A009B07EF /* clockOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		46439AD627ACF27B009B07EF /* clockOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46439AEF27ACF27C009B07EF /* Build configuration list for PBXNativeTarget "clockOS WatchKit Extension" */;
+			buildPhases = (
+				46439AD327ACF27B009B07EF /* Sources */,
+				46439AD427ACF27B009B07EF /* Frameworks */,
+				46439AD527ACF27B009B07EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "clockOS WatchKit Extension";
+			packageProductDependencies = (
+				46439B0727ACF50A009B07EF /* Alamofire */,
+			);
+			productName = "clockOS WatchKit Extension";
+			productReference = 46439AD727ACF27B009B07EF /* clockOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46439AC227ACF279009B07EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					46439AC727ACF279009B07EF = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					46439ACB27ACF27A009B07EF = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					46439AD627ACF27B009B07EF = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 46439AC527ACF279009B07EF /* Build configuration list for PBXProject "clockOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46439AC127ACF279009B07EF;
+			packageReferences = (
+				46439B0627ACF50A009B07EF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 46439AC927ACF279009B07EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46439AC727ACF279009B07EF /* clockOS */,
+				46439ACB27ACF27A009B07EF /* clockOS WatchKit App */,
+				46439AD627ACF27B009B07EF /* clockOS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46439AC627ACF279009B07EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46439ACA27ACF27A009B07EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46439AD227ACF27B009B07EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46439AD527ACF27B009B07EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46439AEA27ACF27C009B07EF /* Preview Assets.xcassets in Resources */,
+				46439AE727ACF27C009B07EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46439AD327ACF27B009B07EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46439AE127ACF27B009B07EF /* NotificationController.swift in Sources */,
+				46439ADF27ACF27B009B07EF /* ContentView.swift in Sources */,
+				46439AFF27ACF370009B07EF /* SplashScreen.swift in Sources */,
+				46439AE527ACF27B009B07EF /* ComplicationController.swift in Sources */,
+				46439B0527ACF410009B07EF /* MapScreen.swift in Sources */,
+				46439ADD27ACF27B009B07EF /* clockOSApp.swift in Sources */,
+				46439B0327ACF3AE009B07EF /* OrderScreen.swift in Sources */,
+				46439B0127ACF3A1009B07EF /* SignInScreen.swift in Sources */,
+				46439AFC27ACF2F7009B07EF /* MainModule.swift in Sources */,
+				46439AE327ACF27B009B07EF /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46439ACF27ACF27A009B07EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46439ACB27ACF27A009B07EF /* clockOS WatchKit App */;
+			targetProxy = 46439ACE27ACF27A009B07EF /* PBXContainerItemProxy */;
+		};
+		46439ADA27ACF27B009B07EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46439AD627ACF27B009B07EF /* clockOS WatchKit Extension */;
+			targetProxy = 46439AD927ACF27B009B07EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		46439AED27ACF27C009B07EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46439AEE27ACF27C009B07EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46439AF027ACF27C009B07EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"clockOS WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "clockOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "clockOS WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iuhugh.clockOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		46439AF127ACF27C009B07EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"clockOS WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "clockOS WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "clockOS WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iuhugh.clockOS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		46439AF427ACF27C009B07EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = clockOS_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "clockOS WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iuhugh.clockOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		46439AF527ACF27C009B07EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = clockOS_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "clockOS WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iuhugh.clockOS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		46439AF827ACF27C009B07EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iuhugh.clockOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		46439AF927ACF27C009B07EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = iuhugh.clockOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46439AC527ACF279009B07EF /* Build configuration list for PBXProject "clockOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46439AED27ACF27C009B07EF /* Debug */,
+				46439AEE27ACF27C009B07EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46439AEF27ACF27C009B07EF /* Build configuration list for PBXNativeTarget "clockOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46439AF027ACF27C009B07EF /* Debug */,
+				46439AF127ACF27C009B07EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46439AF327ACF27C009B07EF /* Build configuration list for PBXNativeTarget "clockOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46439AF427ACF27C009B07EF /* Debug */,
+				46439AF527ACF27C009B07EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46439AF727ACF27C009B07EF /* Build configuration list for PBXNativeTarget "clockOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46439AF827ACF27C009B07EF /* Debug */,
+				46439AF927ACF27C009B07EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46439B0627ACF50A009B07EF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46439B0727ACF50A009B07EF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46439B0627ACF50A009B07EF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 46439AC227ACF279009B07EF /* Project object */;
+}
